@@ -17,7 +17,7 @@
 
 ## Features
 
-- Fast - Uses a wide range of optimization techniques and is faster than all other WebAssembly implementations tested ([go-interpreter/wagon](https://github.com/go-interpreter/wagon), [paritytech/wasmi](https://github.com/paritytech/wasmi)). Benchmark results are [here](#benchmarks). JIT support for x86-64 and ARM is planned.
+- Fast - Uses a wide range of optimization techniques and is faster than all other WebAssembly implementations tested ([perlin-network/wagon](https://github.com/perlin-network/wagon), [paritytech/wasmi](https://github.com/paritytech/wasmi)). Benchmark results are [here](#benchmarks). JIT support for x86-64 and ARM is planned.
 - Correct - Implements WebAssembly execution semantics and passes most of the [official test suite](https://github.com/WebAssembly/testsuite) (66/72 passed, none of the failures are related to the execution semantics).
 - Secure - User code executed is fully sandboxed. A WebAssembly module's access to resources (instruction cycles, memory usage) may easily be controlled to the very finest detail.
 - Pure - Does not rely on any native dependencies, and may easily be cross-compiled for running WebAssembly modules on practically any platform (Windows/Linux/Mac/Android/iOS/etc).
@@ -152,7 +152,7 @@ And have the VM run the entry-point function `app_main` to see the result:
 
 ## Benchmarks
 
-We benchmarked **life** alongside a couple of other WebAssembly implementations in different programming languages ([go-interpreter/wagon](https://github.com/go-interpreter/wagon), [paritytech/wasmi](https://github.com/paritytech/wasmi)).
+We benchmarked **life** alongside a couple of other WebAssembly implementations in different programming languages ([perlin-network/wagon](https://github.com/perlin-network/wagon), [paritytech/wasmi](https://github.com/paritytech/wasmi)).
 
 <p align="center">
 	<img width=600 src="media/bench.png">

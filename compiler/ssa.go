@@ -5,8 +5,8 @@ import (
 
 	"math"
 
-	"github.com/go-interpreter/wagon/disasm"
-	"github.com/go-interpreter/wagon/wasm"
+	"github.com/perlin-network/wagon/disasm"
+	"github.com/perlin-network/wagon/wasm"
 	"strings"
 )
 
