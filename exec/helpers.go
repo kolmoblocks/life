@@ -3,7 +3,7 @@ package exec
 import (
 	"errors"
 
-	"github.com/perlin-network/life/utils"
+	"github.com/kolmoblocks/life/utils"
 )
 
 var _ ImportResolver = (*NopResolver)(nil)

@@ -5,8 +5,8 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/perlin-network/wagon/wasm/leb128"
-	ops "github.com/perlin-network/wagon/wasm/operators"
+	"github.com/go-interpreter/wagon/wasm/leb128"
+	ops "github.com/go-interpreter/wagon/wasm/operators"
 )
 
 // readU32 reads an unsigned 32-bit integer from a reader.

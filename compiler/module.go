@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"encoding/binary"
 	//"fmt"
-	"github.com/perlin-network/wagon/disasm"
-	"github.com/perlin-network/wagon/wasm"
-	//"github.com/perlin-network/wagon/validate"
-	"github.com/perlin-network/wagon/wasm/leb128"
-	"github.com/perlin-network/life/compiler/opcodes"
-	"github.com/perlin-network/life/utils"
+	"github.com/go-interpreter/wagon/disasm"
+	"github.com/go-interpreter/wagon/wasm"
+	//"github.com/go-interpreter/wagon/validate"
+	"github.com/go-interpreter/wagon/wasm/leb128"
+	"github.com/kolmoblocks/life/compiler/opcodes"
+	"github.com/kolmoblocks/life/utils"
 )
 
 type Module struct {

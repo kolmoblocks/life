@@ -2,22 +2,22 @@
 
 [![GoDoc][1]][2] [![Discord][7]][8] [![MIT licensed][5]][6] [![Build Status][9]][10] [![Go Report Card][11]][12]
 
-[1]: https://godoc.org/github.com/perlin-network/life?status.svg
-[2]: https://godoc.org/github.com/perlin-network/life
+[1]: https://godoc.org/github.com/kolmoblocks/life?status.svg
+[2]: https://godoc.org/github.com/kolmoblocks/life
 [5]: https://img.shields.io/badge/license-MIT-blue.svg
 [6]: LICENSE
 [7]: https://shields.dougley.com/discord/458332417909063682.svg
 [8]: https://discord.gg/dMYfDPM
-[9]: https://travis-ci.org/perlin-network/life.svg?branch=master
-[10]: https://travis-ci.org/perlin-network/life
-[11]: https://goreportcard.com/badge/github.com/perlin-network/life
-[12]: https://goreportcard.com/report/github.com/perlin-network/life
+[9]: https://travis-ci.org/kolmoblocks/life.svg?branch=master
+[10]: https://travis-ci.org/kolmoblocks/life
+[11]: https://goreportcard.com/badge/github.com/kolmoblocks/life
+[12]: https://goreportcard.com/report/github.com/kolmoblocks/life
 
 **life** is a secure & fast WebAssembly VM built for decentralized applications, written in [Go](https://golang.org/) by Perlin Network.
 
 ## Features
 
-- Fast - Uses a wide range of optimization techniques and is faster than all other WebAssembly implementations tested ([perlin-network/wagon](https://github.com/perlin-network/wagon), [paritytech/wasmi](https://github.com/paritytech/wasmi)). Benchmark results are [here](#benchmarks). JIT support for x86-64 and ARM is planned.
+- Fast - Uses a wide range of optimization techniques and is faster than all other WebAssembly implementations tested ([perlin-network/wagon](https://github.com/go-interpreter/wagon), [paritytech/wasmi](https://github.com/paritytech/wasmi)). Benchmark results are [here](#benchmarks). JIT support for x86-64 and ARM is planned.
 - Correct - Implements WebAssembly execution semantics and passes most of the [official test suite](https://github.com/WebAssembly/testsuite) (66/72 passed, none of the failures are related to the execution semantics).
 - Secure - User code executed is fully sandboxed. A WebAssembly module's access to resources (instruction cycles, memory usage) may easily be controlled to the very finest detail.
 - Pure - Does not rely on any native dependencies, and may easily be cross-compiled for running WebAssembly modules on practically any platform (Windows/Linux/Mac/Android/iOS/etc).
@@ -34,7 +34,7 @@ export GO111MODULE=on
 go mod vendor
 
 # build test suite runner
-go build github.com/perlin-network/life/spec/test_runner
+go build github.com/kolmoblocks/life/spec/test_runner
 
 # run official test suite
 python3 run_spec_tests.py /path/to/testsuite
@@ -152,7 +152,7 @@ And have the VM run the entry-point function `app_main` to see the result:
 
 ## Benchmarks
 
-We benchmarked **life** alongside a couple of other WebAssembly implementations in different programming languages ([perlin-network/wagon](https://github.com/perlin-network/wagon), [paritytech/wasmi](https://github.com/paritytech/wasmi)).
+We benchmarked **life** alongside a couple of other WebAssembly implementations in different programming languages ([perlin-network/wagon](https://github.com/go-interpreter/wagon), [paritytech/wasmi](https://github.com/paritytech/wasmi)).
 
 <p align="center">
 	<img width=600 src="media/bench.png">

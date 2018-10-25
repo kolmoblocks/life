@@ -2,4 +2,4 @@
 
 package compiler
 
-//"github.com/perlin-network/wagon"
+//"github.com/go-interpreter/wagon"

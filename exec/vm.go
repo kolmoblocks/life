@@ -6,11 +6,11 @@ import (
 	"math"
 	"math/bits"
 
-	"github.com/perlin-network/life/compiler"
-	"github.com/perlin-network/life/compiler/opcodes"
-	"github.com/perlin-network/life/utils"
+	"github.com/kolmoblocks/life/compiler"
+	"github.com/kolmoblocks/life/compiler/opcodes"
+	"github.com/kolmoblocks/life/utils"
 
-	"github.com/perlin-network/wagon/wasm"
+	"github.com/go-interpreter/wagon/wasm"
 )
 
 // FunctionImport represents the function import type. If len(sig.ReturnTypes) == 0, the return value will be ignored.
